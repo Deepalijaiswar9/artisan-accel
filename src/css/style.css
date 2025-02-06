@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 2560px;
+    width: 90%;
+    margin: 0 auto;
+}

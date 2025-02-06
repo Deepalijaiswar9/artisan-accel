@@ -1,0 +1,126 @@
+/* Banner Section */
+.banner {
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 0;
+  }
+  
+  .wrapper {
+    z-index: 1; /* Ensure content is above the overlay */
+  }
+  
+  .bannerText {
+    line-height: 1.6;
+  }
+  
+  .bannerText h1 {
+    font-size: 50px;
+  }
+  
+  .bannerText p {
+    font-size: 30px;
+  }
+  
+  /* Button Styling (Shared for both JOIN NOW and Read More) */
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px 0;
+    background-color: #50291a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #50291a;
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    transform: scale(0.98);
+  }
+  
+  /* About Section Styling */
+  .about-section-text {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 20px 0;
+  }
+  
+  /* Responsive Styling */
+  @media only screen and (max-width: 580px) {
+    .bannerText h1 {
+      font-size: 40px;
+    }
+  
+    .bannerText p{
+      font-size: 20px;
+    }
+  
+    .button,
+  .about-section p {
+    font-size: 15px;
+  }
+
+  .about-section p {
+    padding: 10px 0;
+    line-height: 1.4;
+
+  }
+
+  .about-section-text {
+    padding: 50px 0;
+  }
+
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .bannerText h1 {
+      font-size: 30px;
+    }
+  
+    .bannerText p {
+      font-size: 15px;
+    }
+  
+    .button {
+      font-size: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .bannerText h1 {
+      font-size: 25px;
+    }
+  }
+  
